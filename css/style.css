@@ -599,6 +599,10 @@ html {
     padding-left: 10px
 }
 
+.col-xl-6 {
+    z-index: 3;
+}
+
 .col {
     max-width: 100%;
     flex-basis: 0;

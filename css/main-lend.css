@@ -221,9 +221,23 @@
 }
 
 .banner {
+    position: relative;
     background: #172027;
     border-radius: 0px 0px 15px 15px;
     background-size: cover;
+}
+
+.banner_braces-kids::after {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 137px;
+    background: linear-gradient(180deg, #2D1522 0%, rgba(45, 21, 34, 0) 100%);
+    transform: matrix(1, 0, 0, -1, 0, 0);
+    pointer-events: none;
 }
 
 @media (max-width: 1199.98px) {
@@ -2140,4 +2154,221 @@ hr {
 
 .info__price {
     font-size: 22px;
+}
+
+/* braces-types */
+
+.braces-types {
+    position: relative;
+    background: linear-gradient(64.65deg, #88207E -0.13%, #3D2068 37.78%, #651733 77.92%, #850860 100.01%);
+}
+
+.braces-types::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 259px;
+    background: linear-gradient(180deg, #2D1522 0%, rgba(45, 21, 34, 0) 100%);
+}
+
+.braces-types__container {
+    position: relative;
+    z-index: 1;
+    padding: 140px 0;
+}
+
+.braces-types .centered-title {
+    color: #FFFFFF;
+    max-width: none;
+}
+
+.braces-types .centered__subtitle {
+    color: #FFFFFF;
+}
+
+.braces-types__swiper-container {
+    position: relative;
+    margin-top: 40px;
+}
+
+.braces-card.swiper-slide {
+    opacity: 1 !important;
+}
+
+.braces-types__swiper-container {
+    max-width: 1240px;
+    overflow: hidden;
+    margin: 40px auto 0;
+}
+
+.braces-card {
+    position: relative;
+    width: 282px;
+    height: 528px;
+    border-radius: 15px;
+    background-color: #fff;
+    overflow: hidden;
+    margin: 0 15px;
+}
+
+.braces-card__text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 19px 20px;
+}
+
+.braces-card__image {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 25px;
+    width: 282px;
+    height: 206px;
+    object-fit: contain;
+}
+
+.braces-card__title {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+    text-align: center;
+    color: #000;
+    max-width: 184px;
+    margin: 5px auto 0;
+}
+
+.braces-card__title-span {
+    font-weight: 500;
+}
+
+.braces-card__subtitle {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: #6D727E;
+    min-height: 46px;
+    margin: 20px 0 0;
+}
+
+.braces-card__price {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 36px;
+    color: #000000;
+    text-align: center;
+    margin: 20px auto 0;
+}
+
+.braces-card__price-from {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.braces-card__price-ruble {
+    font-size: 32px;
+    line-height: 36px;
+}
+
+.braces-card__price-subtitle {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #747474;
+    text-align: center;
+    margin: 0 auto 15px;
+}
+
+.braces__record {
+    position: absolute;
+    width: 255px;
+    height: 60px;
+    transform: translateX(-50%);
+    bottom: 35px;
+    left: 50%;
+    margin-top: auto;
+}
+
+.braces-slider-pagination {
+    bottom: -40px !important;
+}
+
+.braces-slider-next {
+    display: none;
+}
+
+.braces-slider-prev {
+    display: none;
+}
+
+.braces-types .swiper-pagination {
+    display: flex;
+    gap: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.braces-types .swiper-pagination-bullet {
+    opacity: 0.2;
+    background: #FFF;
+}
+
+.braces-types .swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
+@media screen and (max-width: 1360px) {
+    .braces-types__container {
+        max-width: none;
+        padding: 40px 40px 90px;
+    }
+
+    .braces-types__swiper-container {
+        max-width: none;
+        overflow: visible;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .braces-types__swiper-container {
+        max-width: none;
+        overflow: visible;
+    }
+
+    .braces-slider-next {
+        right: -40px;
+        display: flex;
+    }
+
+    .braces-slider-prev {
+        left: -40px;
+        display: flex;
+    }
+}
+
+.centered-title {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 51px;
+    text-align: center;
+    letter-spacing: -0.01em;
+    color: #FFFFFF;
+    margin: 0 auto;
+}
+
+.centered-title__span {
+    font-weight: 600;
 }
