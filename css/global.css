@@ -1,0 +1,40 @@
+/* UI */
+
+.inherit-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.in-dream {
+  font-size: 21px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  background: linear-gradient(92.8deg, #1E8FED 1.07%, #1E3FED 44.17%, #062D99 73.89%, #4E028A 100%);
+  border-radius: 4.20986px;
+  width: max-content;
+  padding: 2px 5px 2px;
+}
+
+.in-dream-smile {
+  font-size: 14px;
+  line-height: 17px;
+  transform: translateY(2px);
+}
+
+.centered-title {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 51px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #FFFFFF;
+  margin: 0 auto;
+}
+
+.centered-title__span {
+  font-weight: 600;
+}
