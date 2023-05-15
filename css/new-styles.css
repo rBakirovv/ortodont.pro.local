@@ -410,9 +410,15 @@
   box-sizing: border-box;
 }
 
-.accordions-list__swipe-menu .accordion-item-list:last-of-type {
+.accordions-list__swipe-menu .accordion-item-list:last-child {
   border-radius: 0 0 10px 10px;
+  padding-bottom: 10px;
 }
+
+.accordions-list__swipe-menu .accordion-item-list:first-child {
+  padding-top: 10px;
+}
+
 
 .accordions-list__swipe-menu .accordion-item-link {
   font-family: Rubik, Helvetica, Arial, sans-serif;
