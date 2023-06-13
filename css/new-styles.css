@@ -377,15 +377,6 @@
   padding-bottom: 21.5px;
 }
 
-.accordions-list__swipe-menu .accordion-head_flexiligner .accordion-head-logo {
-  width: 105px;
-  height: 30px;
-  position: absolute;
-  top: 50%;
-  right: 48px;
-  transform: translateY(-50%);
-}
-
 .accordions-list__swipe-menu .accordion-body {
   box-shadow: 0px 4px 10px #F0F0F8;
   border-radius: 0 0 10px 10px;
@@ -680,5 +671,159 @@
   .braces-slider-prev {
     left: -40px;
     display: flex;
+  }
+}
+
+/* map */
+
+section.contact {
+  height: 913px;
+}
+
+.contact-form-wrap {
+  pointer-events: none;
+}
+
+.contact-form-wrap .container {
+  pointer-events: none;
+}
+
+.contact-form-wrap .container .row {
+  pointer-events: none;
+}
+
+.map-accordions-list {
+  display: flex;
+  flex-direction: column;
+  pointer-events: all;
+  gap: 15px;
+  max-width: 384px;
+  width: 100%;
+}
+
+.accordions-list.map-accordions-list {
+  pointer-events: all;
+}
+
+.map-accordions-list .accordion-item_active .accordion-head {
+  color: #FFFFFF;
+  background: #343A40;
+}
+
+.map-accordions-list .accordion-head {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 25px;
+  letter-spacing: -0.01em;
+  background: #FFFFFF;
+  border-radius: 15px;
+  color: #343A40;
+  border-radius: 10px 10px 0 0;
+  padding-top: 21.5px;
+  padding-bottom: 21.5px;
+}
+
+.map-accordions-list .accordion-body {
+  border-radius: 0px 0px 15px 15px;
+}
+
+.accordion-head-address {
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: #FFC25A;
+  text-underline-offset: 8px;
+}
+
+.map-panel__branch-image {
+  width: 384px;
+  height: 180px;
+}
+
+.map-panel__branch-container {
+  width: 100%;
+  border-radius: 0px 0px 15px 15px;
+  padding: 15px 24px;
+}
+
+.map-panel__panel-item {
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.map-panel__panel-item:not(:first-of-type) {
+  margin-top: 15px;
+}
+
+.map-panel__panel-item::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 41px;
+  height: 4px;
+  background: #E9E7E7;
+  border-radius: 10px;
+}
+
+.map-panel__branch-time {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  width: max-content;
+  margin: 5px auto 0;
+}
+
+.map-panel__branch-metro {
+  position: relative;
+}
+
+.map-panel__branch-metro::after {
+  content: '';
+  position: absolute;
+  left: -11px;
+  top: 50%;
+  transform: translateY(-25%);
+  width: 6px;
+  height: 6px;
+  border-radius: 500px;
+}
+
+.map-panel__branch-metro_red {
+  position: relative;
+}
+
+.map-panel__branch-metro_red::after {
+  background: #ED1625;
+}
+
+.map-panel__branch-metro_orange::after {
+  background: #FC8E28;
+}
+
+.map-panel__branch-working-hours {
+  margin-top: 15px;
+}
+
+@media (max-width: 767.98px) {
+  .section.contact {
+    height: calc(1300px);
+  }
+
+  .map-accordions-list .accordion-head {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .accordion-head-address {
+    text-underline-offset: 6px;
+  }
+
+  .contact-form-wrap .container {
+    flex-direction: column;
+    justify-content: flex-end;
   }
 }
